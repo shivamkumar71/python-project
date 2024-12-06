@@ -37,7 +37,7 @@ correct_pin = "1234"
          # Initialize account details
 def atm_simulation():   
         balance = 5000  # Initial balance
-        pin = 12345  # Default PIN
+        pin = 1234  # Default PIN
         transaction_history = []  # List to store transaction history
 
             # function for checking balance
@@ -92,7 +92,7 @@ def atm_simulation():
                     
                     print(" ######################################################### ")
                     
-                    transaction_history.append(f"atm pin changed: {new_pin}") # for save in history
+                   
                 else:
                     print("New PINs do not match. Try again.")
             else:
@@ -119,7 +119,7 @@ def atm_simulation():
     2. Deposit Money.
     3. Withdraw Money.
     4. Change PIN.
-    5. View Transaction & activity History.
+    5. View Transaction History.
     6. Exit.
             
 ######################################################################################
