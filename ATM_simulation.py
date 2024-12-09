@@ -1,3 +1,16 @@
+import time
+
+print("put your ATM card in machine")
+time.sleep(3)
+print()
+
+print("wait few seconds")
+time.sleep(4)
+print()
+
+
+
+
 def valid_pin(pin):
     
     # Validate that the PIN is a 4-digit numeric value.
@@ -16,6 +29,7 @@ def atm_login(correct_pin):
         if valid_pin(entered_pin):
             if entered_pin == correct_pin:
                 print("Login successful!")
+                print()
                 return True
             else:
                 attempts -= 1
@@ -166,6 +180,7 @@ def atm_simulation():
                 
 # run login function
 atm_login(correct_pin)
+time.sleep(2)
 
 # Run the ATM simulation program
 atm_simulation()
